@@ -1,0 +1,454 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+}
+:root {
+  --background-color: #fff;
+  --dark-color: #000000;
+  --main-color: #fff;
+  --footer-color: #f3be12;
+}
+.container {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 20px;
+}
+/*Header*/
+
+.name_container {
+  background-color: var(--background-color);
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+}
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+
+/* Nav */
+.icon-menu {
+  font-size: 2rem;
+  text-align: right;
+  display: none;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  align-items: center;
+  margin-top: 0;
+  background-color: var(--background-color);
+}
+/* Contacto nav */
+.contact {
+  display: flex;
+  gap: 2rem;
+  line-height: 1.5;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.telefono-icon {
+  font-size: 3rem;
+}
+.enlaces_container {
+  display: flex;
+  gap: 4rem;
+  list-style: none;
+  padding: 30px;
+  transition: all 0.3s ease;
+}
+
+.enlaces_container a:hover {
+  background-color: #fd8727b0;
+  color: #fff;
+  font-size: 25px;
+}
+
+.enlaces_container a {
+  text-decoration: none;
+  color: var(--dark-color);
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  padding: 50px 10px;
+}
+/* Logo y nombre nav*/
+
+.logo_container {
+  cursor: pointer;
+  display: flex;
+  gap: 1.2rem;
+  font-size: 20px;
+  transition: font-size 0.5s ease;
+  -webkit-transition: font-size 0.5s ease;
+}
+.logo_container:hover {
+  font-size: 28px;
+}
+
+.logo {
+  display: flex;
+  gap: 1rem;
+  width: 6rem;
+  height: 6rem;
+  margin-left: 3rem;
+}
+/* Hero */
+.hero_container {
+  width: auto;
+  aspect-ratio: 16/7;
+  display: grid;
+  grid-template-columns: 1fr 0fr;
+  place-items: center;
+  overflow: hidden;
+  transition: grid-template-columns 0.25s ease;
+}
+.img_left,
+.img_middle {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transform-origin: center;
+  transition: grid-template-columns 0.25s ease;
+}
+.img_left {
+  background-image: linear-gradient(100deg, #000020, #00000020, #000020),
+    url(/img/pizza_hero4.jpg);
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  width: 100%;
+}
+.img_left h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 5rem;
+  margin-bottom: 0;
+}
+.img_left p {
+  margin-top: 0;
+  text-align: center;
+  color: #fff;
+  font-size: 1rem;
+}
+.img_middle {
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  width: 100%;
+  background-image: linear-gradient(100deg, #000020, #00000020, #000020),
+    url(/img/pizza_hero3.jpg);
+}
+.img_middle h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 5rem;
+  margin-bottom: 0;
+}
+.img_middle p {
+  margin-top: 0;
+  text-align: center;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.hero_container:hover {
+  grid-template-columns: 0fr 1fr;
+}
+/* products */
+.tittle_menu {
+  font-size: 2.2rem;
+}
+.producto_div {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 2rem;
+  padding: 2rem 2rem;
+  background-color: #ee8f12cc;
+  border-radius: 50px;
+}
+.img_text img {
+  width: 25rem;
+  height: auto;
+  border-radius: 30px;
+}
+.subtitle {
+  font-size: 3rem;
+  color: #ffffff;
+}
+.product_text {
+  line-height: 1.7;
+}
+.product_text p {
+  line-height: 2.5;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+/* Seccion Menu */
+.menu {
+  margin-bottom: 4rem;
+}
+.menu_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 3rem;
+}
+
+/* Contenedor del producto */
+.productos_contenido {
+  background-color: #d8d6d5;
+  padding: 2rem;
+  border-radius: 20px;
+}
+.productos {
+  transition: transform 0.3s ease;
+}
+.productos:hover {
+  transform: scale(1.05);
+}
+.productos_contenido a {
+  align-items: center;
+  color: #000000;
+  margin-right: 15px;
+  padding: 15px 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: font-size 0.3s ease;
+}
+.productos_contenido a:hover {
+  font-size: 30px;
+  background-color: #fc422a;
+}
+.productos_contenido {
+  font-size: 25px;
+  margin-top: 1rem;
+}
+.description {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.img_menu {
+  border-radius: 10px;
+  background-size: cover;
+  height: 20rem;
+  width: 100%;
+}
+.figcaption {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 10px;
+  margin-top: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.figcaption span {
+  font-size: medium;
+  font-weight: bold;
+}
+figcaption {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.paragraph_pizza {
+  font-size: small;
+  line-height: 2;
+}
+
+.icons {
+  text-align: center;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+
+/* Imagenes de las pizza menu */
+.img_peperoni {
+  background-image: linear-gradient(100deg, #000000c0, #00000005, #000000c0),
+    url(/img/pizza_de_peperoni.jpg);
+}
+.img_napolitana {
+  background-image: linear-gradient(100deg, #000000c0, #00000005, #000000c0),
+    url(/img/pizza_napolitana.jpg);
+}
+.img_queso {
+  background-image: linear-gradient(100deg, #000000c0, #00000005, #000000c0),
+    url(/img/pizza_de_queso.jpg);
+}
+
+/* Footer */
+.footer {
+  background-color: #fcaf45;
+}
+.container-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 3rem;
+  line-height: 2.5;
+  font-size: 1.1rem;
+}
+
+.menu-footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 3rem;
+  justify-items: left;
+}
+.menu-footer li {
+  list-style: none;
+  color: #fff;
+}
+.menu-footer a {
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+}
+.content p {
+  color: #fff;
+}
+.information ul li a:hover,
+.my-account ul li a:hover {
+  color: var(--dark-color);
+}
+
+.title-footer {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.social-icons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1.5rem;
+}
+.social-icons span {
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-icons span ion-icon {
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.facebook {
+  background-color: #3162be;
+}
+.twitter {
+  background-color: #57c8f5;
+}
+.instagram {
+  background: linear-gradient(#405de6, #833ab4, #fd1d1d, #f56040, #fcaf45);
+}
+
+.whatsapp {
+  background-color: #279e2d;
+}
+.youtube {
+  background-color: #f31212;
+}
+
+.content button {
+  border: none;
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  font-size: 1.3rem;
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 600;
+}
+.content button:hover {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+}
+.copyright {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 3rem;
+  justify-items: center;
+  border-top: 1px solid #fff;
+}
+
+.copyright p {
+  font-weight: 420;
+  font-size: 1.2rem;
+}
+.contact-info {
+  align-items: center;
+}
+/* media queries 1200px */
+@media (max-width: 1200px) {
+  .enlaces {
+    display: none;
+  }
+
+  .nav {
+    justify-content: space-between;
+  }
+  .icon-menu {
+    display: contents;
+  }
+  .contact {
+    display: none;
+  }
+  .img_text img {
+    display: none;
+  }
+}
+
+@media (max-width: 902px) {
+  html {
+    font-size: 60%;
+  }
+  .producto_div {
+    display: grid;
+    padding: 20px 30px;
+  }
+  .logo_container img {
+    display: none;
+  }
+  .hero_container h2 {
+    font-size: 4rem;
+  }
+  .hero_container p {
+    font-size: 100%;
+  }
+  .h2 {
+    font-size: 3rem;
+  }
+
+  .tittle_menu {
+    text-align: center;
+  }
+  .producto_div p {
+    font-size: small;
+  }
+  .img_text img {
+    display: none;
+  }
+  .img_text {
+    justify-self: center;
+  }
+
+  .paragraph_pizza {
+    font-size: 40%;
+  }
+}
