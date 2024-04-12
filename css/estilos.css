@@ -120,7 +120,7 @@ h1 {
 }
 .img_left {
   background-image: linear-gradient(100deg, #000020, #00000020, #000020),
-    url(/img/pizza_hero4.jpg);
+    url(../img/pizza_hero4.jpg);
   display: grid;
   place-items: center;
   overflow: hidden;
@@ -144,7 +144,7 @@ h1 {
   overflow: hidden;
   width: 100%;
   background-image: linear-gradient(100deg, #000020, #00000020, #000020),
-    url(/img/pizza_hero3.jpg);
+    url(../img/pizza_hero3.jpg);
 }
 .img_middle h2 {
   text-align: center;
@@ -275,15 +275,15 @@ figcaption {
 /* Imagenes de las pizza menu */
 .img_peperoni {
   background-image: linear-gradient(100deg, #000000c0, #00000005, #000000c0),
-    url(/img/pizza_de_peperoni.jpg);
+    url(../img/pizza_de_peperoni.jpg);
 }
 .img_napolitana {
   background-image: linear-gradient(100deg, #000000c0, #00000005, #000000c0),
-    url(/img/pizza_napolitana.jpg);
+    url(../img/pizza_napolitana.jpg);
 }
 .img_queso {
   background-image: linear-gradient(100deg, #000000c0, #00000005, #000000c0),
-    url(/img/pizza_de_queso.jpg);
+    url(../img/pizza_de_queso.jpg);
 }
 
 /* Footer */
